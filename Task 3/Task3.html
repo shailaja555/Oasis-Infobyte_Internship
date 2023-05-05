@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="Task3.css" />
+    </head>
+    <body>
+        <div class="head">
+            <h1 > TEMPERATURE CONVERTER</h1>
+        </div>
+        <div class="container">
+            <div class="input_box">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celcius" oninput="celToFar(this.value)" onchange="celToFar(this.value)" >
+<p style="font-size: 20px"> Fahrenheit: <span id="outputFahrenheit"> </span> </p>
+            </div>
+            <div class="input_box">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="fahrenheit" oninput="farToCel(this.value)" onchange="farToCel(this.value)" >
+                <p style="font-size: 20px"> Celsius: <span id="outputCelcius"> </span> </p>
+            </div>
+        </div>
+        <script src="Task3.js"></script>
+    </body>
+</html>
